@@ -1,0 +1,25 @@
+#include <stdio.h>
+int fibo(int n)
+{
+  int a=0,b=1,c;
+	if(n==0)
+      return 0;
+  else if (n==1)
+    return 1;
+  else
+  {
+    return (fibo(n-1)+fibo(n-2));
+  }
+}
+int main()
+{
+  int n,k;
+  scanf("%d",&n);
+  k=n-1;
+  for(int i=1;i<=n;i++)
+  {
+   printf("%d\n",fibo(k));
+    k--;
+  }
+    return 0;
+}
