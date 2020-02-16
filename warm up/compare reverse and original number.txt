@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main()
+{
+int n,num,rev,t,orig;
+  scanf("%d",&n);
+  for(int i=0;i<n;i++)
+  {
+    rev=0;
+	scanf("%d",&num);
+    orig=num;
+    while(num!=0)
+    {
+      t=num%10;
+      rev=rev*10+t;
+      num=num/10;
+    }
+    if(orig==rev)
+      printf("Equal\n");
+    else
+      printf("Not Equal\n");
+  }
+}

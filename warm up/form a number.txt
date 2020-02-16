@@ -1,0 +1,12 @@
+int n,num,i,val=0;
+int formNumber()
+{
+    scanf("%d",&n);
+  	for(i=0;i<n;i++)
+    {
+      scanf("%d",&num);
+      val=val*10+num;
+    }
+  return val;
+}
+
