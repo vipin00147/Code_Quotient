@@ -1,0 +1,45 @@
+#include <stdio.h>
+/* Include other headers as needed */
+int main()
+{
+  int n,w,x,sum,test,count,arr[12][12];
+  char c;
+  scanf("%d",&test);
+  for(int i=0;i<test;i++)
+  {
+    sum=0;
+    count=1;
+    scanf("%d %d\n",&n,&w);
+    scanf("%d %c",&x,&c);
+    for(int j=1;j<=n;j++)
+    {
+        for(int k=1;k<=w;k++)
+        {
+          if(count<=n)
+          {
+            arr[j][k]=count;
+            count++;
+          }
+          else{
+            arr[j][k]=0;
+          }
+        }
+      }
+    if(c=='C')
+    {
+      for(int j=1;j<=w;j++)
+      {
+        sum=sum+arr[j][x];
+      }
+       printf("%d\n",sum);
+    }
+    else if(c=='R')
+    {
+      for(int j=1;j<=w;j++)
+      {
+        sum=sum+arr[x][j];
+      }
+       printf("%d\n",sum);
+    }
+  }
+ }
