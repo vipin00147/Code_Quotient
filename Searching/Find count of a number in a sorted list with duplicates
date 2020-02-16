@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main()
+{
+  int arr[20],count=0,n,test,num;
+  scanf("%d",&test);
+  for(int i=0;i<test;i++)
+  {
+    count=0;
+    scanf("%d%d",&n,&num);
+    for(int i=0;i<n;i++)
+    {
+	scanf("%d",&arr[i]);
+    }
+    for(int i=0;i<n;i++)
+    {
+      if(arr[i]==num)
+        count++;
+    }
+    printf("%d\n",count);
+  }
+    return 0;
+}
