@@ -1,0 +1,26 @@
+#include <stdio.h>
+/* Include other headers as needed */
+int main()
+{
+int arr[5],max,min;
+  for(int i=0;i<5;i++)
+  {
+    scanf("%d",&arr[i]);
+  }
+  max=arr[0];
+  min=arr[0];
+  for(int i=1;i<5;i++)
+  {
+    if(arr[i]>max)
+    {
+      min=max;
+      max=arr[i];
+    }
+    else if(arr[i]<max && arr[i]>min || max==min)
+    {
+      min=arr[i];
+    }
+  }
+  printf("%d",min);
+    return 0;
+}
