@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main()
+{
+  int array[100], n, c, d, swap,count,test,loc;
+  scanf("%d",&test);
+  for(int i=0;i<test;i++)
+  {
+    count=0;
+  scanf("%d",&n);
+  for (c=0;c<n;c++)
+  {
+    scanf("%d",&array[c]);
+	}
+  for (c=0;c<n-1;c++)
+  {
+    loc=c;
+    for (d=c+1;d<n;d++)
+    {
+      if(array[loc]>array[d])
+        loc=d;
+    }
+    if(loc!=c)
+    {
+        swap=array[c];
+        array[c]=array[loc];
+        array[loc]=swap;
+        count++;
+      }
+  }
+  printf("%d\n",count);
+}
+}
