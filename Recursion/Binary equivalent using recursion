@@ -1,0 +1,11 @@
+int decimalToBinary(int n)
+{
+  int binary;
+   if(n==0)
+     return 0;
+  else
+  {
+  binary=n%2+10*(decimalToBinary(n/2));
+   return binary;
+  }
+}
