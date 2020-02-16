@@ -1,0 +1,28 @@
+int arr[20];
+int * mergeArrays(int a[], int b[], int asize, int bsize) 
+{
+  int j,i,temp;
+  for(i=0;i<asize;i++)
+  {
+    arr[i]=a[i];
+  }
+  for(j=0;j<bsize;j++)
+  {
+    arr[i]=b[j];
+    i++;
+  }
+  for(i=0;i<(asize+bsize)-1;i++)
+  {
+    for(j=0;j<(asize+bsize)-1;j++)
+      
+    {
+      if(arr[j]>arr[j+1])
+      {
+        temp=arr[j];
+        arr[j]=arr[j+1];
+        arr[j+1]=temp;
+      }
+    }
+  }
+  return arr;
+}
