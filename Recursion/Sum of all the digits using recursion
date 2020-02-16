@@ -1,0 +1,13 @@
+int sumOfDigits(int n)
+{
+  int t;
+  int sum=0;
+  if(n==0)
+    return 0;
+  else
+  {
+    t=n%10;
+    return  t+sumOfDigits(n/10);
+  }
+  
+}
