@@ -1,0 +1,36 @@
+/*
+int Stack[SIZE], top=-1;
+int isFull();
+int isEmpty();
+int push(int item);
+int pop();
+
+Above variables are used for Stack, SIZE and top and all are global variables. Also above push and pop functions are provided. */
+#include<math.h>
+int evalPrefix(char* exp)
+{
+	int n1,n2,answer;
+  int l = strlen(exp);
+  for (int i = l-1; i>= 0; --i)
+  {
+    if (isdigit(exp[i]))
+    {
+       push(exp[i] - '0');
+    }
+    else
+    {
+      n1 = pop();
+      n2 = pop();
+      switch (exp[i])
+      {
+        case '+': push(n1 + n2); break;
+        case '-': push(n1 - n2); break;
+        case '*': push(n1 * n2); break;
+        case '/': push(n1 / n2); break;
+        case'^' : push(pow(n1,n2)); break;
+      }
+    }
+  }
+  answer = pop();
+  return answer;
+}
