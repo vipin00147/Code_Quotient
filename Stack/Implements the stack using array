@@ -1,0 +1,21 @@
+int isFull(){
+	return top==(SIZE-1);
+}
+int isEmpty(){
+	return top==-1;
+}
+int push(int item){
+  if(isFull())
+  {return top;}
+  else
+	Stack[++top] = item;
+}
+int pop(){
+	int temp;
+  if(isEmpty()){
+    return -1;}
+  else{
+  temp=Stack[top--];
+  return temp;
+  }
+}
