@@ -1,0 +1,25 @@
+#include<math.h>
+int evalPostfix(char* exp)
+{
+	int i, op1, op2, answer;
+  for (i = 0; exp[i]!='\0'; i++)
+  {
+    if (isdigit(exp[i]))
+      push(exp[i] - '0');
+    else
+    {
+      op2 = pop();
+      op1 = pop();
+      switch (exp[i])
+      {
+        case '+': push(op1 + op2); break;
+        case '-': push(op1 - op2); break;
+        case '*': push(op1 * op2); break;
+        case '/': push(op1 / op2); break;
+        case '^': push(pow(op1,op2)); break;
+      }
+    }
+  }
+  answer = pop();
+  return answer;
+}
