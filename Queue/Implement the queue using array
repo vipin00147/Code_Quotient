@@ -1,0 +1,25 @@
+void enqueue(int item)
+{
+	if (rear == SIZE)   // Queue is full
+   return;
+  if(front == -1 && rear == -1){
+    front++;
+    rear++;
+  }
+  else
+    rear++;
+  	array[rear] = item;
+}
+
+int dequeue()
+{
+	if (front > rear)
+  {
+    return -1;
+  }
+  else{
+  int item = array[front];
+  front++;
+  return item;
+    }
+}
