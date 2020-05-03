@@ -1,0 +1,13 @@
+void reverseQueue(int q[])
+{
+  int temp, j = 0;
+	for(int i=0;q[i]!='\0';i++) {
+      j++;
+    }
+  j=j-1;
+  for(int i=0;i<j;i++,j--) {
+    temp=q[i];
+    q[i]=q[j];
+    q[j]=temp;
+  }
+}
