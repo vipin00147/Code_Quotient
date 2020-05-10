@@ -21,15 +21,14 @@ int findMiddle(struct Node* head)
 }
 int findNLast(struct Node* head, int n)
 {
-  if(head == NULL){
+ if(head == NULL){
 	return -1;
   }
   else {
-   int count = 0, x,i = 0;
+   int count = 0,i = 0;
 	struct Node* temp = head;
 	while(temp != NULL) {
 		count++;
-		x=temp->data;
 		temp = temp -> next;
 	}
 	temp = head;
