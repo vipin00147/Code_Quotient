@@ -1,0 +1,77 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<malloc.h>
+struct node
+{
+    int data;        // To hold the data part
+	int N;     		// To define the priority of node
+	struct node* next;    // Link to next node       
+};
+
+struct node* head;
+struct node* new_node;
+struct node* temp;
+struct node* prev;
+
+void insert_item(int item, int pr)
+{
+  new_node = (struct node*)malloc(sizeof(struct node));
+  new_node->data = item;
+  new_node->N = pr;
+  new_node->next=NULL;
+
+  if(head == NULL)
+   	head = new_node;
+  else if((head->N) > pr)
+  {
+    new_node->next = head;
+    head = new_node;
+  }
+  else
+  {
+    temp = head;
+    while(temp != NULL && temp->N < pr)
+	{
+      temp = temp->next;
+	}
+    new_node->next = temp->next;
+    temp->next = new_node;  
+  }		
+}
+
+void delete_item()
+{
+    if(head != NULL)     //if list is not empty
+    {
+        printf("\nDeleted Node is: %d with %d priority\n", head->data, head->N);
+        head = head->next;
+    }
+    else    //if list is empty then display error message
+        printf("\nError! List is Empty.");
+  
+}
+
+void disp()
+{
+    temp = head;
+    printf("Priority Queue: \n");
+    printf("Data \t Priority\n");
+    while(temp!=NULL)
+    {
+        printf("%d \t %d\n",temp->data, temp->N);
+        temp=temp->next;
+    }
+}
+
+int main()
+{
+    insert_item(10,3);    //Send Element and its priority for insertion
+    insert_item(20,2);    //Send Element and its priority for insertion
+    insert_item(30,1);    //Send Element and its priority for insertion
+    insert_item(40,2);    //Send Element and its priority for insertion
+    insert_item(50,3);    //Send Element and its priority for insertion
+    disp();
+    delete_item();
+    disp();
+    return 0;
+}
