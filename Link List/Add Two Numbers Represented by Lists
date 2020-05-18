@@ -1,0 +1,31 @@
+struct Node* addListNumbers(struct Node* head1, struct Node* head2) 
+{
+   int flag=0,x=0;
+   struct Node *temp1=head1;
+   struct Node*temp2=head2;
+   while(temp1!=NULL || temp2!=NULL || x!=0)
+   {
+    if(temp1!=NULL){
+      flag=flag+1;
+    }
+    if(temp2!=NULL){
+      flag=flag+2;
+    }
+    if(flag==1){
+      x=x+temp1->data; 
+      temp1=temp1->next;
+    }
+    if(flag==2){
+      x=x+temp2->data; 
+      temp2=temp2->next;
+    }
+    if(flag==3){
+      x=x+temp1->data+temp2->data;
+     temp1=temp1->next;
+     temp2=temp2->next;
+    }
+    printf("%d ",x%10);
+    x=x/10;
+    flag=0;
+  }
+}
