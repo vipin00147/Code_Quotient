@@ -30,12 +30,13 @@ void insert_item(int item, int pr)
   else
   {
     temp = head;
-    while(temp != NULL && temp->N < pr)
+    while(temp != NULL && temp->N <= pr)
 	{
+		prev =temp;
       temp = temp->next;
-	}
-    new_node->next = temp->next;
-    temp->next = new_node;  
+ }
+    new_node->next = prev->next;
+    prev->next = new_node;  
   }		
 }
 
@@ -65,7 +66,7 @@ void disp()
 
 int main()
 {
-    insert_item(10,3);    //Send Element and its priority for insertion
+    insert_item(10,2);    //Send Element and its priority for insertion
     insert_item(20,2);    //Send Element and its priority for insertion
     insert_item(30,1);    //Send Element and its priority for insertion
     insert_item(40,2);    //Send Element and its priority for insertion
