@@ -1,0 +1,47 @@
+struct Node* insertBeg(struct Node* head, int data)
+{ 
+	struct Node* temp; 
+	struct Node* new_node;
+  	new_node = (struct Node*)malloc(sizeof(struct Node));
+	new_node -> data = data;
+	new_node -> next = head;
+	if(head == NULL) {
+		new_node->next=new_node;
+		head = new_node;
+		temp = new_node;
+	}
+	else{
+		temp=head;
+		while(temp->next!=head){
+			temp=temp->next;
+		}
+		temp->next=new_node;
+	}
+	head=new_node;
+  return head;
+}
+
+struct Node* insertEnd(struct Node* head, int data)
+{
+  	struct Node* temp; 
+	struct Node* new_node;
+  	new_node = (struct Node*)malloc(sizeof(struct Node));
+  	new_node->data= data;
+  	new_node->next=head;
+  	if(head==NULL)
+    {
+      new_node->next=new_node;
+      head=new_node;
+    }
+  	else
+    {
+      temp=head;
+      while(temp->next!=head)
+      {
+        temp=temp->next;
+      }
+      temp->next=new_node;
+      new_node->next=head;
+      return head;
+    }
+}
