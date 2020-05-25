@@ -1,0 +1,28 @@
+struct Node* deleteBeg(struct Node* head)
+{
+	if(head != NULL){
+	struct Node* temp = head;
+	while(temp->next != head)
+	{
+		temp = temp->next;
+	}
+	head= head->next;
+	temp->next=head;
+    return head;
+	}
+}
+
+struct Node* deleteEnd(struct Node* head)
+{
+  if(head !=NULL){
+ struct Node* temp = head->next;
+ struct Node* prev;
+  while(temp->next != head)
+  {
+    prev = temp;
+    temp = temp -> next;
+  }
+  prev -> next = head;
+ return head;
+  }
+}
