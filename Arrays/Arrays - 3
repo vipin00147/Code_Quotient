@@ -1,0 +1,15 @@
+Q->What would be the output of the below program
+#include<stdio.h> 
+int main( )
+{
+	int array[26], i ;
+	for ( i = 0 ; i <= 25 ; i++ )
+	{
+		array[i] = 'A' + i ;
+		printf ( "%c ", array[i] ) ;
+	}
+	return(0);
+}
+
+
+Ans->It prints A, B, C, …., Z
