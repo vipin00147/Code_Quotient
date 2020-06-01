@@ -1,0 +1,21 @@
+Q->Consider the following pseudo function on circular linked list:
+
+int doSomething(List head)
+{
+  int length = 1;
+  if(head == NULL)
+    return 0;
+  List temp = head->next;
+  while(temp != head)
+  {
+    temp = temp->next;
+    length++;
+  }
+  return length;
+}
+What will be the output, if following linked lists will be passed to it: -
+
+Ans->
+1.  1, 2, 3, 4, 5   ->  5
+2.  2, 3, 4, 5      ->  4
+3.  5, 4, 3, 3, 4   ->  5
