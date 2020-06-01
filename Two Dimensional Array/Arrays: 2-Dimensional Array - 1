@@ -1,0 +1,6 @@
+Q->Consider the following declaration of an array in C:
+char a[10][10];
+Assuming that the main memory is byte-addressable and that the array is stored starting from memory address 1000, the address of a[4][3] is
+
+
+Ans->1043
