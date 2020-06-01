@@ -1,0 +1,5 @@
+Q->Consider a situation where swap operation is very costly. Which of the following sorting
+algorithms should be preferred so that the number of swap operations are minimized in general?
+
+
+Ans->Selection Sort
