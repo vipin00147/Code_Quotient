@@ -1,0 +1,12 @@
+Q->Match the following properties to their definitions below:
+1. If two elements with same key appear in the same order in sorted output as they appear in the input array to be sorted
+2. If the algorithm is sorting the data in main memory of the CPU.
+3. If the algorithm is sorting the data using secondary memory along with the memory of the CPU
+4. if it takes advantage of already 'sorted' elements in the list
+
+
+Ans->
+1.    Adaptive      ->     4
+2.    Internal      ->     2
+3.    External      ->     3
+4.    Stable        ->     1
