@@ -1,0 +1,15 @@
+Q->What does the following pseudo function do (push(), pop() and isEmpty() are operations on Stack s).
+void doSomething(int n)
+{
+    while (n > 0)
+    {
+      push(n % 2);
+      n = n/2;
+    }
+ 
+    while (Not isEmpty(s))
+      print(pop());    // pop an element from Stack s and print it
+}
+
+
+Ans->   Prints binary representation of n
