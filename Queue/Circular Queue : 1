@@ -1,0 +1,5 @@
+Q->The conditions to detect queue full and empty circular queue with FULL and REAR pointers of size N
+
+Ans->
+Full: (REAR+1)% n == FRONT;
+Empty: REAR == FRONT
