@@ -1,0 +1,4 @@
+Q->If we have 6 stack operations for pushing and popping each of a, b and c such that push (a) must occur before push (b) which must occur before push (c).
+Which one of the following orders could not be the order of pop operations?
+
+Ans->   cab
