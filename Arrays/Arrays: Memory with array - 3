@@ -1,0 +1,12 @@
+Q->What would be the output of the below program
+#include<stdio.h> 
+int s=2;
+int a[s];
+int main( )
+{
+	a[0]=a[1]=0;
+	printf("%d", a[0]);
+	return 0; 
+}
+
+Ans->Syntax Error
