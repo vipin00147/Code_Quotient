@@ -1,0 +1,5 @@
+Q->The initial configuration of a queue is a, b, c, d, and a is in the front end.
+
+To get the configuration d, c, b, a, one needs a minimum of
+
+Ans-> 3 deletions and 3 additions
