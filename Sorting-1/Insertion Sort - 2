@@ -1,0 +1,4 @@
+Q->What are the correct intermediate steps of the following data set when it is being sorted with the Insertion sort?
+15, 20, 10, 18
+
+Ans->   15,20,10,18 -- 15,20,10,18 -- 10,15,20,18 -- 10,15,18,20
