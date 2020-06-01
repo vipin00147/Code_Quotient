@@ -1,0 +1,5 @@
+Q->What are the correct intermediate steps of the following data set when it is being sorted with the bubble sort?
+15,20,10,18
+
+Ans->
+15,10,20,18 -- 15,10,18,20 -- 10,15,18,20
