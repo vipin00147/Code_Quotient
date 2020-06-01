@@ -1,0 +1,15 @@
+Q->What the following pseudo code do on a linked list?
+
+void doSomething(List head, Node n1)
+{
+     if(head == null)
+         head = n1;
+     else
+     {
+        List t, curr;
+        for(curr = head; (t = curr -> next) != NULL; curr = t);
+        curr->next = n1;
+     }
+}
+
+Ans->Inserting node n1 at the end of the list
