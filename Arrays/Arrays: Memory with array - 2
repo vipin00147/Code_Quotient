@@ -1,0 +1,13 @@
+Q->What would be the output of the below program
+#include<stdio.h> 
+int main( )
+{
+	int s=2;
+	int a[s];
+	a[0]=a[1]=0;
+	printf("%d", a[0]);
+	return 0; 
+}
+
+
+Ans->0
