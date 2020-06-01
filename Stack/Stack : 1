@@ -1,0 +1,5 @@
+Q->The following sequence of operations are performed on a stack
+
+PUSH(10), PUSH(20), POP, PUSH(10), PUSH(20), POP, POP. POP, PUSH(20), POP
+
+Ans->  20, 20, 10, 10, 20
