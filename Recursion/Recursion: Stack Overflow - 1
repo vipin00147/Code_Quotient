@@ -1,0 +1,11 @@
+Q-> What the following function will do:
+
+void rec_fun(int n)
+{
+   if (n == 0)
+   return 1; 
+	else
+   return (n * rec_fun(n));
+}
+
+Ans->   Call recursively till Stack overflow and shows Segmentation fault
