@@ -1,0 +1,17 @@
+Q->Consider the function defined below: -
+int func1(int a)
+{
+    if (a <= 1)
+            printf("%d=", a);
+    else
+    {
+            func1(a/2);
+            printf("%d=", a);
+    }
+}
+What will be the output of func1() if it is called as below: -
+
+1.  func1(4); -> 1=2=4= 
+2.  func1(7); -> 1=3=7=
+3.  func1(1); -> 1=  
+4.  func1(10); ->  1=2=5=10=
