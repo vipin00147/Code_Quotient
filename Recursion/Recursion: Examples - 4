@@ -1,0 +1,17 @@
+Q->What would be the output of the below program
+#include<stdio.h>
+void rec_fun(int n)
+{
+   if (n <= 40)
+	{
+	    printf("%d ", n);
+	    rec_fun(2*n);
+   }
+}
+int main()
+{
+   rec_fun(10);
+   return 0;
+}
+
+Ans->   10 20 40
