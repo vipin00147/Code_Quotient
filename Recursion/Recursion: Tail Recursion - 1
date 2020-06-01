@@ -1,0 +1,2 @@
+Q->What is tail recursion?
+Ans->A function where the recursive call is the last thing executed by the function
