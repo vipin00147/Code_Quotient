@@ -1,0 +1,18 @@
+Q->Which of the following functions is having tail recursion: (Write YES/NO)
+
+1.
+int fact(int x)
+{
+  if (x==0)
+    return 1;                                       ->  NO
+  else
+    return x*fact(x-1);
+}
+2.
+void tail(int i) 
+{
+ if (i>0) 
+  printf("%d",i);                                     ->YES
+ else
+  tail(i-1);
+}
