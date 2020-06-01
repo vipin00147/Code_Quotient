@@ -1,0 +1,17 @@
+Q->What must be placed at blank in below pseudo code, so that it will reverse a singly linked list correctly: -
+void reverse(List head)
+{
+    List prev = NULL;
+    List current = head;
+    List next;
+    while (current != NULL)
+    {
+        next  = current->next; 
+        current->next = prev;  
+        prev = current;
+        current = next;
+    }
+    _____________________________________
+}
+
+Ans-> head = prev;
