@@ -1,0 +1,18 @@
+Q->Which of the following functions is having tail recursion: (Write YES/NO)
+
+1.
+int cq1(int n)
+{
+    if (n == 0)
+        return 0;
+    else                                      ->    NO
+        return n * cq1(n - 1);
+}
+2.
+int cq2(int n, int total)
+{
+    if (n == 0)
+        return total;                         ->YES
+    else
+            return cq2(n-2, total-2);
+}
