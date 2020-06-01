@@ -1,0 +1,4 @@
+Q->Suppose that a selection sort of 50 items has completed 35 iterations of the main loop. How many items are now 
+guaranteed to be in their final position i.e. never need to be moved again during rest part sort?
+
+Ans->  35
