@@ -1,0 +1,13 @@
+Q->Which of the below code snippets performs linear search with recursion?
+
+Ans->
+void linSearch(int arr[], int first, int last, int key)
+{
+    if(first == last)
+        printf(“-1”);
+    else
+        if(arr[first] == key)
+            printf(“%d”,first);
+        else
+            linSearch(arr, first+1, last, key);
+}
