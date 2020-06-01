@@ -1,0 +1,5 @@
+Q->Consider the following lists of sorted numbers.
+1 3 4 5 8 9
+If the next element in the list is 2 then how many comparisons and swaps are needed to sort the next number?
+
+Ans->  6 comparisons, 5 swaps
