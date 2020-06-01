@@ -1,0 +1,4 @@
+Q->What are the correct intermediate steps of the following data set when it is being sorted with the Selection sort?
+
+Ans->
+10,20,15,18 -- 10,15,20,18 -- 10,15,18,20
