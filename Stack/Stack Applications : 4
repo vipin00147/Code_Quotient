@@ -1,0 +1,5 @@
+Q->The following postfix expression is evaluated using a stack
+823^/23*+51*- 
+The top two elements of the stack after first * is evaluated?
+
+Ans->   6 1
