@@ -1,0 +1,15 @@
+Q->What the following pseudo code do on a linked list?
+
+int doSomething(List head)
+{
+    int n1 = 0;
+    List curr = head;
+    while(curr != NULL)
+    {
+       n1++;
+       curr = curr -> next;
+    }
+    return n1;
+}
+
+Ans-> Return the number of nodes in list
