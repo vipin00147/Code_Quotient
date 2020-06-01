@@ -1,0 +1,8 @@
+Q->What the following pseudo code do on a linked list?
+
+void doSomething(List p)
+{
+	return ((p == NULL) || (p->next == NULL) || (( p->data <= p->next->data) && doSomething (p->next)));
+}
+
+Ans-> It returns true if linked list have data in non-decreasing order
