@@ -1,0 +1,17 @@
+Q->What would be the output of the below program
+#include<stdio.h> 
+int main( )
+{
+	int *ptr;
+	int x;
+	ptr = &x;
+	*ptr = 0;
+
+	printf("%d %d ", x, *ptr);
+
+	*ptr += 5;
+	printf("%d %d ", x, *ptr);
+	return 0;
+}
+
+Ans->0 0 5 5
