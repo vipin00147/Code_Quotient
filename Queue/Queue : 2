@@ -1,0 +1,10 @@
+Q->What the following pseudo function will do on a Queue?
+
+doSomething(Queue Q)
+{
+  delete items from queue 1-by-1 and push on stack.
+  pop items from stack 1-by-1 and insert in queue.
+}
+
+
+Ans-> Reverse the elements of queue
