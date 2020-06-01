@@ -1,0 +1,7 @@
+Q->Which of the following statements will not result in a syntax error in C language: (Write Y for Yes and N for No).
+1.int a[][] = {1, 2, 3, 4};   ->Y  
+2.int a[3][1] = {1, 2, 3, 4}; ->N
+3.int a[2][2] = {1, 2, 3, 4}; ->N
+4.int a[][2] = {1, 2, 3, 4};  ->N
+5.int a[2][] = {1, 2, 3, 4};  ->Y
+6.int a[][2] = {{1}, {2, 3, 4}}; ->N
