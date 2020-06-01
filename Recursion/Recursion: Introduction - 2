@@ -1,0 +1,17 @@
+Q->Consider the following code:
+#include<stdio.h>
+void rec_fun(int n)
+{
+	printf("Hello\n");
+	if(n==4)
+		return 0;
+	else
+		rec_fun(n-1);
+}
+int main()
+{
+	rec_fun(7);
+	return 0;
+}
+
+Ans-> 4
