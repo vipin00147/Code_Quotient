@@ -1,0 +1,6 @@
+The integers 1, 2, 3, 4 are pushed into the stack in that order. They may be popped out of the stack in any valid order.
+The integers which are popped out produce a permutation of the numbers 1,2,3,4.
+
+Which of the following permutation can never be produced in such a way?
+
+Ans->   4, 2, 3, 1
