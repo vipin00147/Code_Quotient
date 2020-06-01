@@ -1,0 +1,11 @@
+Q->Following circular queue can accommodate maximum 6 elements with the following data inserted initially.
+
+Front = 2, Rear = 4     Queue = _, _, C, O, D, _
+What will be the values of Front and Rear after following operations (Write space separated Front and Rear value)?
+
+
+Ans->
+1.  Insert E    ->  2 5
+2.  Insert Q    ->  2 0
+3.  Insert U    ->  2 1
+4.  Delete      ->  3 1
