@@ -1,0 +1,12 @@
+Q->What does the following pseudo code do for a given Linked List?
+
+void doSomething(List head)
+{
+    if(head != NULL)
+    {
+        print(head->data);
+        doSomething(head->next);
+    }
+}
+
+Ans->Prints all nodes of linked lists
