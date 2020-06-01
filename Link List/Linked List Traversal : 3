@@ -1,0 +1,6 @@
+Q->State which statement is True or False: -
+
+1.It is easy to insert and delete elements in Linked List.  ->    True
+2.Sequential access is not allowed in a typical implementation of Linked Lists.   ->  False
+3.The size of array has to be pre-decided, linked lists can change their size any time.   ->  True
+4.Linked Lists allow accessing data in random manner.   ->  False
