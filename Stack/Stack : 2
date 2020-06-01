@@ -1,0 +1,8 @@
+Q->What will be the sequence of letters popped when they pushed on an empty stack as below: -
+
+(Here a letter means push the letter and * means pop operation.)
+
+Ans-> 
+1.COD*E**QUO***TI***E*NT**  ->  DEOOUQITCETN
+2.CODE****QUO***TI**EN**T*  ->  EDOCOUQITNET
+3.CO**DE**QUO*TI**E***NT**  ->  OCEDOITEUQTN
