@@ -1,0 +1,5 @@
+Q->The algorithm that will efficiently sort an array that is nearly sorted except for the 
+interchanging of some adjacent pairs of number like: {1, 3, 2, 5, 4, 6} is:
+
+
+Ans->Bubble Sort
