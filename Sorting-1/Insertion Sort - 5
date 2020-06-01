@@ -1,0 +1,3 @@
+Q->If all the elements in an input array is equal for example {10,10,10,10,10}, What would be the running time of the Insertion Algorithm?
+
+Ans->  O(n)
