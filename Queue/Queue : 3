@@ -1,0 +1,7 @@
+Q->What will be the sequence of letters deleted when they inserted in an empty queue as below: -
+
+(Here a letter means insert the letter and * means deletion operation.)
+
+1.COD*E**QUO***TI***E*NT**        ->  CODEQUOTIENT  
+2.CODE****QUO***TI**EN**T*        ->  CODEQUOTIENT
+3.CO**DE**QUO*TI**E***NT**        ->  CODEQUOTIENT
