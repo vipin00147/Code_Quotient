@@ -1,0 +1,11 @@
+Q->Consider the below function to calculate factorial of a number n: -
+int fact_recursive(int num) 
+{
+	if (num == 0)
+		______________;
+	else
+		return num * fact_recursive(num-1);
+}
+Which of the following line must be placed at blank space in code above.
+
+Ans->   return 1;
