@@ -1,0 +1,10 @@
+Q->What would be the output of the below program
+#include<stdio.h> 
+int main( )
+{
+ int *p = 5 ;
+ printf ( "%d", *p) ;
+ return 0;
+}
+
+Ans->Segmentation Fault (Program crash due to malicious memory access)
