@@ -1,0 +1,25 @@
+Q->Consider the following pseudo code on a singly linked list
+
+void doSomething(List head)
+{
+  List p, q;
+  int temp;
+  if ((!head) || !(head -> next))
+    return;
+  p = head;
+  q = head -> next;
+  while(q != null)
+  {
+     temp = p->value;
+     p-> value = q-> value;
+     q-> value = temp;
+     p = q-> next;
+     q = p-> next;
+  }
+}
+What will be the content of following lists if head of them will be passed to this pseudo code (Write elements separated by space just like the inputs): -
+Ans->
+1.  1 2 3 4 5 6   ->  2 1 4 3 6 5
+2.  1 1 2 2 3 3   ->  1 1 2 2 3 3
+3.  1 1 1 2 2 2   ->  1 1 2 1 2 2
+
