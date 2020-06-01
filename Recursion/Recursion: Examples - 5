@@ -1,0 +1,9 @@
+Q->What is the following function determining?
+int func1(int a, int b)
+{
+    if (b==0) return 0;
+    if (b==1) return a;
+    return a + func1(a, b-1);
+}
+
+Ans->   a*b where a and b are non-negative integers
