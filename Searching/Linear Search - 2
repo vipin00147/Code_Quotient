@@ -1,0 +1,16 @@
+Q->Which of the below code snippets performs unordered linear search iteratively?
+
+Ans->
+int LinearSearch(int arr[], int size, int data)
+{
+    int index = -1;
+    for(int i = 0; i < size; i++)
+    {
+            if(arr[i] == data)
+        {
+index = i;
+            break;
+        }
+    }
+    return index;
+}
