@@ -1,0 +1,2 @@
+Q->Which of the following codes will delete the element pointed by x from the doubly linked list, where x points to last node?
+Ans->x -> prev -> next = NULL;
