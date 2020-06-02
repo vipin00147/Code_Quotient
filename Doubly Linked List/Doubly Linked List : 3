@@ -1,0 +1,11 @@
+ Q->What the following pseudo function do on a non-empty doubly linked list?
+void doSomething(List head)
+{
+   while (head->next != NULL)
+   {
+       print(head->data);
+       head = head->next;
+   }
+}
+
+Ans-> It prints all but the last node of the list
