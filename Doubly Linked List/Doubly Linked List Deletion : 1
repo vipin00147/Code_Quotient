@@ -1,0 +1,11 @@
+Q->What the following pseudo function do on a linked list (tail refers to the last node of list)?
+
+int doSomething(List tail)
+{
+  List t = tail -> prev;
+  tail -> prev = t -> prev;
+  t -> prev -> next = tail;
+  return t -> data;
+}
+
+Ans->It deletes the second last node and returns the value at second last node
