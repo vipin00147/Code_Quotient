@@ -1,0 +1,2 @@
+Q->Which of the following codes will insert a new node pointed by X at the beginning of doubly linked list, where head points to first node?
+Ans->x->next = head;        head->prev = x;       head = x;
