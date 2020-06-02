@@ -1,0 +1,5 @@
+Q->Which of the following codes will get the number of nodes in doubly linked list in the variable total?
+Ans->
+x = tail; 
+for(total=1; (x != NULL); total++) 
+x = x -> prev;
