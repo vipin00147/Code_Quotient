@@ -1,0 +1,16 @@
+int countNodes(struct Node* head)
+{
+  int count=0;
+  if(head!=NULL)
+  {
+    struct Node* temp = head;
+    while(temp->next!=head)
+    {
+    temp=temp->next;
+    count++;
+  	}
+    return count+1;
+  }
+  else
+    return 0;
+}
