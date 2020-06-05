@@ -1,0 +1,24 @@
+void swapNodes(struct Node** head, int x, int y)
+{
+  struct Node* temp=*head;
+  struct Node* n1=NULL;
+  struct Node* n2=NULL;
+  int swap;
+  if(x==y)
+    return;
+  if(head!=NULL){
+    while(temp!=NULL){
+      if(temp->data==x)
+        n1=temp;
+      if(temp->data==y)
+        n2=temp;
+      temp=temp->next;
+    }
+  }
+  if(n1!=NULL && n2!=NULL)
+  {
+    swap=n1->data;
+  	n1->data=n2->data;
+  	n2->data=swap;
+  }
+}
