@@ -1,0 +1,7 @@
+Q-> Given a binary tree who’s in order and pre order traversal are given by
+
+Inorder: E I C F B G D J H K
+Pre order : B C E I F D G H J K
+The post order traversal of the above binary tree is   
+
+Ans-> I E F C G J K H D B
