@@ -1,0 +1,5 @@
+Q->In the following tree
+
+If post order traversal generates sequences x y – z w * +, then label of nodes 1, 2, 3, 4, 5, 6, 7, will be
+
+Ans->+, -, *, x, y, z, w
