@@ -1,0 +1,70 @@
+int operator(char m)
+  {
+    if(m=='+'||m=='-')
+	{
+		return 2;
+	}
+	else
+	if(m=='*'||m=='/'||m=='%')
+	{
+		return 3;
+	}
+	else
+      if(m=='^')
+	{
+		return 4;
+	}
+    else
+	{
+		return 1;
+	}
+  } 
+int infixToPostfix(char exp[], char output[])
+{
+  char ch;
+  int p=0;
+  int z=strlen(exp);
+  exp[z]=')';
+  exp[z+1]='\0';
+push('(');
+  
+  for(int i=0;i<=z;i++)
+  {
+    if('A'<=exp[i]&&exp[i]<='Z')
+    {
+    output[p++]=exp[i];
+    }
+    else if('a'<=exp[i]&&exp[i]<='z')
+    {
+          output[p++]=exp[i];
+    }
+     else if(exp[i]=='(')
+    {
+      push(exp[i]);
+    }
+   
+    else if(exp[i]==')')
+    {
+
+      ch=pop();
+      while(ch!='(')
+      {
+        output[p++]=ch;
+        ch=pop();
+      }
+    }
+    else
+    {
+   
+      ch=pop();
+      while(operator(ch)>=operator(exp[i]))
+      {
+        output[p++] = ch;
+        ch=pop();
+      }
+      push(ch);
+      push(exp[i]);
+    }
+  }
+  output[p++]='\0';
+}
