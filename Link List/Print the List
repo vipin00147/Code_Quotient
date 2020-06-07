@@ -1,31 +1,19 @@
-/* struct Node
-{
-    int data;
-    struct Node* next;
-};
-*/
 void forwardPrint(struct Node* head)
 {
-	struct Node *temp = head;
- 	while(temp != NULL)
-    {
-    printf("%d-",temp -> data);
-    temp = temp -> next;
-    }
+  struct Node* temp= head;
+  while(temp!=NULL)
+  {
+    printf("%d-",temp->data);
+    temp=temp->next;
+  }
 }
 
 void backwardPrint(struct Node* head)
 {
-  int arr[5],i=0;
-  struct Node *temp = head;
- 	while(temp != NULL)
-    {
-    arr[i]=temp -> data;
-     i++;
-    temp = temp -> next;
-    }
-  	i=i-1;
-  	for(i;i>=0;i--){
-    printf("%d-",arr[i]);
+  struct Node* temp= head;
+  if(head!=NULL)
+  {
+    backwardPrint(temp->next);
+    printf("%d-",temp->data);
   }
 }
